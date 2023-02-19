@@ -1,6 +1,7 @@
 const initialState = {
   cart: {
     content: [],
+    selectedProds: [],
   },
   products: {
     product: [],
@@ -32,6 +33,14 @@ const mainReducer = (state = initialState, action) => {
         products: {
           ...state.products,
           selected: action.payload,
+        },
+      };
+    case "IN_THE_CART":
+      return {
+        ...state,
+        cart: {
+          ...state.cart,
+          selectedProds: state.cart.selectedProds.concat(action.payload),
         },
       };
     default:

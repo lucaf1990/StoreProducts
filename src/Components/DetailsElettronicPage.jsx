@@ -27,6 +27,10 @@ const DetailsElectronicPage = () => {
                     type: "INCREASE_BY_ONE",
                     payload: 0,
                   });
+                  dispatch({
+                    type: "IN_THE_CART",
+                    payload: element,
+                  });
                 }}
                 variant="primary"
               >

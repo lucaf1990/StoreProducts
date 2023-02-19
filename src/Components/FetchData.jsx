@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Card, Button, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 const FetchData = () => {
   const myProducts = useSelector((state) => state.products?.product);
 
@@ -23,7 +24,9 @@ const FetchData = () => {
       console.log(error, "catch error");
     }
   };
-  myfetch();
+  useEffect(() => {
+    myfetch();
+  }, []);
 
   return (
     <>
