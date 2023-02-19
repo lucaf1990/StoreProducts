@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+#body {
+  background-image: url("https://media.istockphoto.com/id/1358618201/vector/shopping-bags-seamless-background-backdrop-for-marketplace-or-online-shop-website-seasonal.jpg?s=170667a&w=0&k=20&c=-lmRokixirp7GdGxObdO9M8KgNt5t54IseK23hqQOkw=");
+  background-position-x: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#fetchCard {
+  border-radius: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#cart {
+  background-color: #e1bc92;
+  width: 100px;
+  border-radius: 20px;
+  height: 40px;
+  padding-left: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h6 {
+  position: relative;
+  left: -29px;
+  top: -1px;
 }
